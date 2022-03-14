@@ -8,7 +8,7 @@ def fermat(n, e=65535):
 
     c = 0
     while not gmpy2.is_square(a ** 2 - n):
-        a += 1
+        a += 2
         c += 1
         if c > tries:
             return False
